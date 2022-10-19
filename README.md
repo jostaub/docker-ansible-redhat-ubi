@@ -12,14 +12,29 @@ This image
 - rsync
 - sshpass
 - argcomplete
+- git
 
 ### Convenience
-- git
 - unzip
 - iputils
 - nmap
 - bind-utils
 
+## Build Options
+
+| Build Arg | Usage |
+|-------|---------|
+|ANSIBLE_VERSION | set ansible version |
+|ANSIBLE_LINT_VERSION| set ansible-list version |
+
+| Target | Usage |
+|-------|---------|
+| base | only install packages listed in ansible related |
+| with-convenience-packages | additionaly install packages listed in convenience |
+
+
 ## TODOs
 - [ ] use non root user
-- [ ] option to disable convenience packages
+- [x] option to disable convenience packages
+
+## Build Options
